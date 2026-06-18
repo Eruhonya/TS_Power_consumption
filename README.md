@@ -139,8 +139,7 @@ Daily-resampled models reached lower RMSE (≈ 0.24 kW) than hourly models (≈ 
 TS_Power_consumption/
 ├── Project_6_Power_Consumption_EN.ipynb   # Main notebook (EDA + modelling)
 ├── README.md
-├── household_power_consumption.txt        # Dataset (download separately)
-└── models/                                # Pre-trained Keras models
+└── Models/                                # Pre-trained Keras models
     ├── basismodel.keras                   # Baseline LSTM
     ├── standardmodel.keras                # Standard LSTM (recommended)
     ├── MeanLSTM_model.keras               # Mean-imputation LSTM
@@ -152,7 +151,7 @@ TS_Power_consumption/
 
 > **Note:** the notebook currently saves and loads models from the project root
 > (e.g. `model.save("standardmodel.keras")`). If you keep the trained models in
-> `models/`, update the corresponding paths in the notebook to `models/...`
+> `Models/`, update the corresponding paths in the notebook to `models/...`
 > (or move the `.keras` files to the root before re-running).
 
 ---
@@ -172,7 +171,7 @@ pip install pandas numpy scipy scikit-learn tensorflow matplotlib seaborn
 # (from the UCI link above)
 
 # 4. Launch the notebook
-jupyter notebook Project_6_Power_Consumption_EN.ipynb
+jupyter notebook Power_Consumption_prediction.ipynb
 ```
 
 The notebook trains all models from scratch. To skip training and use the
@@ -180,11 +179,6 @@ included pre-trained models instead, load them directly:
 
 ```python
 from tensorflow.keras.models import load_model
-model = load_model("models/standardmodel.keras")   # recommended model
+model = load_model("Models/standardmodel.keras")   # recommended model
 ```
 
----
-
-## License
-
-This project is released under the MIT License.

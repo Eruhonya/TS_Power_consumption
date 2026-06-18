@@ -132,7 +132,7 @@ Daily-resampled models reached lower RMSE (≈ 0.24 kW) than hourly models (≈ 
 
 ---
 
-## Repository Structure
+## Project Structure
 
 ```
 TS_Power_consumption/

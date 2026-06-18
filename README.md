@@ -4,7 +4,6 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 Short-term forecasting of household active power consumption using deep recurrent and convolutional-recurrent neural networks (LSTM, CNN-LSTM, CNN-BiLSTM) on the UCI *Individual Household Electric Power Consumption* dataset.
 
